@@ -12,7 +12,7 @@ Minimal dark-mode SPA for AI-powered contract risk analysis. Single page, no aut
 ## Installation
 
 ```bash
-cd frontenf
+cd frontend
 npm install
 cp .env.example .env
 ```
@@ -31,7 +31,7 @@ Ensure backend `CORS_ORIGIN` includes `http://localhost:5173` or `*`.
 **Terminal 2 — Frontend:**
 
 ```bash
-cd frontenf
+cd frontend
 npm run dev
 # opens http://localhost:5173
 ```
@@ -45,7 +45,9 @@ npm run build
 npm run preview
 ```
 
-Set `VITE_API_BASE_URL` to your deployed backend URL in `.env`.
+**Production:** https://contract-risk.vercel.app → API https://random-shit.onrender.com  
+
+Configured in `.env.production` and `src/config/env.js`. See root [DEPLOYMENT.md](../DEPLOYMENT.md).
 
 ## API Integration
 
